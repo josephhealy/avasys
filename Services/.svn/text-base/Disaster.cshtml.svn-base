@@ -1,0 +1,39 @@
+﻿            @{
+                ViewBag.Title = "Disaster Recovery";
+            }
+
+            <ul>
+                <li>
+                    <h1 style="font-size: 18px;">'<a href="http://www.gartner.com/it/page.jsp?id=1439513" target="_blank">Technical debt</a>' is a metaphor coined in the software world which applies just as well to all aspects of IT. As various forms of technical debt accumulate in an enterprise over time, the potential for disaster steadily increases. Left unabated, you eventually arrive at a tipping point where a loss of services and / or data is just a matter of time. 'Paying down' technical debt via risk management, disaster planning, and strategic investing is the key to preventing irreparable harm to your business and reputation. And note, these issues are just as relevant for SMBs.</h1><br />
+                </li>               
+                <li>
+                    <div class="text_block" style="height: 164px;">  
+                        <h2 class="highlight panel_title">Infrastructure</h2>
+                        <p>The risk of internal or external infrastructure failures is ever present. Compensating for such failures and outages is most often dealt with by building in component and service redundancies. Be assured the costs of such backup, standby, and hot redundancies are well worth the investment. The alternative is a loss of reputation and revenue. This is not an aspect of your business operations to short or cut when your reputation is on the line.<span class="highlight">&nbsp We offer risk management, disaster planning, and intervention services.</span></p>
+                    </div>
+                    <div style="float: right; display: block;">
+                        <h2 class="highlight panel_title">&nbsp</h2>
+                        <img src="@Url.Content("~/content/images/risks_151x132.png")" />
+                    </div>
+                </li>
+                <li>
+                    <div class="text_block" style="height: 164px;">    
+                        <h2 class="highlight panel_title">Data Loss</h2>
+                        <p>Forensic data recovery is unpredictable, time consuming, and incredibly expensive - it is an act of desperation to be avoided at all cost. Your data storage and retention plans, protocols, and systems should be well-designed and regularly reviewed to insure there is no possibility of data loss. Storage is cheap, off-site and on-line services abound, and laws relating to retention are clear. Corporate or SMB, no shortage of options exist.<span class="highlight">&nbsp Let us help insure you will never lose access to your data.</span></p>
+                    </div>
+                    <div style="float: right; display: block;">
+                        <h2 class="highlight panel_title">&nbsp</h2>
+                        <img src="@Url.Content("~/content/images/panic_151x132.png")" />
+                    </div>
+                </li>
+                <li>
+                    <div class="text_block" style="height: 164px;">   
+                        <h2 class="highlight panel_title">Software Projects</h2>
+                        <p>The success rate for software development <a href="http://www.drdobbs.com/security/226500046" target=_blank> by all methodologies</a> is typically surveyed at under 65%. Failures happen for a variety of reasons from lack of commitment, paucity of available domain expertise, developer churn, to moving or miscommunicated requirements. Often it is hard for a project owner / sponsor to know a project is going south until the situation is grave. <span class="highlight">We can't turn back the clock, but we can give you a frank assessment of a troubled project and advise on your best options for moving forward.</span></p>
+                    </div>
+                    <div style="float: right; display: block;">
+                        <h2 class="highlight panel_title">&nbsp</h2>
+                        <img src="@Url.Content("~/content/images/help_151x132.png")" />
+                    </div
+                </li>
+            </ul>

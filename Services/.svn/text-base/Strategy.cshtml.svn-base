@@ -1,0 +1,28 @@
+﻿            @{
+                ViewBag.Title = "IT Strategy";
+            }
+            <ul>
+                <li>
+                    <h1 style="font-size: 18px;">IT strategy</span> aligns technology investments with business plans and objectives. Every dollar invested in IT should directly contribute to making your company either more effective or more efficient. However, in today's fast changing technology landscape, the scope of decisions to be made resourcing an enterprise to compete in a mobile, web 2.0 world are both myriad and daunting.</h1><br />
+                </li>               
+                <li>
+                    <div class="text_block">  
+                        <h2 class="highlight panel_title">Effectiveness (Increased Revenue)</h2>
+                        <p>Today’s competitive dynamics demand going to market with a more customer-centric approach. You have to both know your customer and understand how they know you. Customer expectations around the frequency, speed, and accuracy of sales and service interactions are growing along with web, mobile, and social technologies.</p><p>Forays into social media in particular need to be backed by systems which give your team the ability to do more than just 'chat' - they have to be able to confidently reach into your enterprise and deliver customer outcomes which meet or exceed expectations. 'Intimacy', 'bonding', and 'frictionless' may seem clich&eacute;d at times, but accurately reflect what customers are looking for today - to find and connect with what works and stay with it.</p><p>Technology investments aimed at increasing your effectiveness need to directly support KPIs specific to those concepts and expectations.<span class="highlight">&nbsp Are you easy to do business with?</span></p>
+                    </div>
+                    <div style="float: right; display: block;">
+                        <h2 class="highlight panel_title">&nbsp</h2>
+                        <img src="@Url.Content("~/content/images/effectiveness.png")" />
+                    </div>
+                </li>
+                <li style="margin-top: 15px;"><br />
+                    <div class="text_block">
+                    <h2 class="highlight panel_title">Efficiency (Decreased Costs)</h2>
+                    <p>Businesses which succeed in challenging times are the ones who know themselves well, are lean enough to survive, and nimble enough to thrive. They exhibit low technical debt, a deep understanding of their own processes, and a cutting edge ability to provide their team with near-realtime information.</p><p>If you are still weighed down by weak links such as legacy or standalone systems, undocumented manual processes, or you can't integrate seamlessly with your partners then you will be hamstrung in a race already well out of the gate.</p><p>Technology investments aimed at making you more efficient ultimately need to be measured by your ability to execute on behalf of your customers.<span class="highlight">&nbsp How well do you know yourself?</span></p>
+                    </div>
+                    <div style="float: right; display: block;">
+                        <h2 class="highlight panel_title">&nbsp</h2>
+                        <img src="@Url.Content("~/content/images/weak_link.png")" />
+                    </div>
+                </li>
+            </ul>
