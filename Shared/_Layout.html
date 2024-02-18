@@ -6,33 +6,31 @@
     <meta name="keywords" content="Avail Systems">
     <meta http-equiv="imagetoolbar" content="no">
 
-    <title>@ViewBag.Title</title>
-
-    <script src="@Url.Content("scripts/jquery-combined.js")" type="text/javascript" charset="UTF-8"></script>
-    <script src="@Url.Content("scripts/jquery.pngFix.pack.js")" type="text/javascript" charset="utf-8"></script>
-    <script src="@Url.Content("scripts/ds.js")" type="text/javascript" charset="UTF-8"></script>
-    <script src="@Url.Content("scripts/home.js")" type="text/javascript"></script>
-    <script src="@Url.Content("scripts/mod_stats.js")" type="text/javascript" charset="UTF-8"></script>
-    <script src="@Url.Content("scripts/jquery-ui-drag.min.js")" type="text/javascript" charset="UTF-8"></script>
-    <script src="@Url.Content("scripts/datePanelOutput.js")" type="text/javascript" charset="UTF-8"></script>
-    <script src="@Url.Content("scripts/hoverText.js")" type="text/javascript" charset="UTF-8"></script>
-    <script src="@Url.Content("scripts/avaExtensions.js")" type="text/javascript" charset="UTF-8"></script>
-    <script src="@Url.Content("scripts/clock.js")" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/jquery-combined.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/jquery.pngFix.pack.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/ds.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/home.js" type="text/javascript"></script>
+    <script src="scripts/mod_stats.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/jquery-ui-drag.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/datePanelOutput.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/hoverText.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/avaExtensions.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/clock.js" type="text/javascript" charset="UTF-8"></script>
 
                 
     @if (ViewBag.Title == "Software")
     {
-        <script src="@Url.Content("scripts/softwareHoverText.js")" type="text/javascript"></script>
+        <script src="scripts/softwareHoverText.js" type="text/javascript"></script>
         @* This compensates for some javascript code above - probably in home.js (has to come last in order just before page_init) *@
-        <script src="@Url.Content("scripts/section.js")" type="text/javascript"></script>
+        <script src="scripts/section.js" type="text/javascript"></script>
     }
     <script type="text/javascript" charset="UTF-8">$(document).ready(page_init);</script>
 
-    <link rel="shortcut icon" href="@Url.Content("Content/images/flavicon.ico")" />
+    <link rel="shortcut icon" href="Content/images/flavicon.ico" />
 
-    <link href="@Url.Content("Content/styles/design.css")" rel="stylesheet" type="text/css">
-    <link href="@Url.Content("Content/styles/structure.css")" rel="stylesheet" type="text/css">
-    <link href="@Url.Content("Content/styles/colortip-1.0/colortip-1.0-jquery.css")" rel="stylesheet" type="text/css">
+    <link href="Content/styles/design.css" rel="stylesheet" type="text/css">
+    <link href="Content/styles/structure.css" rel="stylesheet" type="text/css">
+    <link href="Content/styles/colortip-1.0/colortip-1.0-jquery.css" rel="stylesheet" type="text/css">
 
     <style type="text/css">
         h1 a{color:#ababab;}
@@ -48,8 +46,8 @@
         <div id="layout_container"> 
             <div id="header">
                 <div id="ds_logo">
-                    <div id="logo_image"><a href="@ViewBag.UrlRoot"><img src="@Url.Content("Content/images/ava_logo.png")" /></a></div>
-                    <div id="logo_text"><a href="@ViewBag.UrlRoot"><h1>Avail Systems</h1></a></div>
+                    <div id="logo_image"><a href="index.html"><img src="Content/images/ava_logo.png" /></a></div>
+                    <div id="logo_text"><a href="index.html"><h1>Avail Systems</h1></a></div>
                     @Html.Partial("_HeaderBugPartial")
                 </div>
             </div>

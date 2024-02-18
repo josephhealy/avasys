@@ -46,6 +46,22 @@
 </head>
 
 <body>
+        <div id="layout_container">
+            <div id="header">
+                <div id="ds_logo">
+                    <div id="logo_image"><a href="@ViewBag.UrlRoot"><img src="Content/images/ava_logo.png" /></a></div>
+                    <div id="logo_text"><a href="@ViewBag.UrlRoot">
+                            <h1>Available Systems</h1>
+                        </a></div>
+                    @Html.Partial("_HeaderBugPartial")
+                </div>
+            </div>
+            <div id="col_1"></div>
+            <script>
+                $("#col_1").load("Shared/_layout.html");
+            </script>
+        
+            <div id="col_2">
     <h1>We are a hands-on software and IT consultancy servicing both corporate and SMB clients alike and dedicated to insuring our clients see a full measure of value for every technology dollar invested in their business.</h1>
     <div id="feature_slideshow">
         <ul id="feature_slides" style="position: relative; ">
@@ -116,4 +132,11 @@
             <div class="pager"></div>
         </div>
     </div>
+</div>
+<div id="footer"></div>
+<script>
+    $("#footer").load("Shared/_LayoutFooter.html");
+</script>
+</div>
+
 </body>

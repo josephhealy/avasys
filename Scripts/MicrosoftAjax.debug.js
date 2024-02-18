@@ -2379,7 +2379,7 @@ Date._getParseRegExp = function Date$_getParseRegExp(dtf, format) {
                 regexp.append("([+-]?\\d\\d?)");
                 break;
             case '/':
-                regexp.append("(\\" + dtf.DateSeparator + ")");
+                regexp.append("(\\" + dtf.DateSeparator + ");
                 break;
             default:
                 Sys.Debug.fail("Invalid date format pattern");

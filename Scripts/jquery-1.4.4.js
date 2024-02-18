@@ -262,7 +262,7 @@ jQuery.fn = jQuery.prototype = {
 		if ( name === "find" ) {
 			ret.selector = this.selector + (this.selector ? " " : "") + selector;
 		} else if ( name ) {
-			ret.selector = this.selector + "." + name + "(" + selector + ")";
+			ret.selector = this.selector + "." + name + "(" + selector + ";
 		}
 
 		// Return the newly-formed element set
@@ -4539,7 +4539,7 @@ jQuery.each({
 jQuery.extend({
 	filter: function( expr, elems, not ) {
 		if ( not ) {
-			expr = ":not(" + expr + ")";
+			expr = ":not(" + expr + ";
 		}
 
 		return elems.length === 1 ?
@@ -5460,7 +5460,7 @@ if ( !jQuery.support.opacity ) {
 			// Set the alpha filter to set the opacity
 			var opacity = jQuery.isNaN(value) ?
 				"" :
-				"alpha(opacity=" + value * 100 + ")",
+				"alpha(opacity=" + value * 100 + ",
 				filter = style.filter || "";
 
 			style.filter = ralpha.test(filter) ?

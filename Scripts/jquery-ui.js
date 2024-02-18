@@ -5871,7 +5871,7 @@ $.widget( "ui.accordion", {
 	_findActive: function( selector ) {
 		return selector
 			? typeof selector === "number"
-				? this.headers.filter( ":eq(" + selector + ")" )
+				? this.headers.filter( ":eq(" + selector + " )
 				: this.headers.not( this.headers.not( selector ) )
 			: selector === false
 				? $( [] )
