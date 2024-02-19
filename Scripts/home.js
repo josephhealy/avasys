@@ -1,4 +1,4 @@
-﻿function page_init(){
+﻿function page_init() {
     //remove listener
     //$(window).die("load", init);
     

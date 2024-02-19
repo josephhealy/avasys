@@ -1,0 +1,86 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="layout_head">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description"
+        content="Available Systems is a hands-on consultancy dedicated to clients getting a full measure of value from every technology dollar invested in their business." />
+    <meta name="keywords" content="Available Systems">
+    <meta http-equiv="imagetoolbar" content="no">
+
+    <title>Avail Systems</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/jquery-combined.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/jquery.pngFix.pack.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/ds.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/home.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/mod_stats.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/jquery-ui-drag.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/datePanelOutput.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/hoverText.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/avaExtensions.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/clock.js" type="text/javascript" charset="UTF-8"></script>
+
+
+    <script type="text/javascript" charset="UTF-8">$(document).ready(page_init);</script>
+
+    <link rel="shortcut icon" href="Content/images/flavicon.ico" />
+
+    <link href="Content/styles/design.css" rel="stylesheet" type="text/css">
+    <link href="Content/styles/structure.css" rel="stylesheet" type="text/css">
+    <link href="Content/styles/colortip-1.0-jquery.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        h1 a {
+            color: #ababab;
+        }
+
+        h1 .learnMore {
+            font-size: 12px;
+            font-style: italic;
+            display: block;
+            text-align: right;
+            line-height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout_container">
+        <div id="header">
+            <div id="ds_logo">
+                <div id="logo_image"><a href="index.html"><img src="Content/images/ava_logo.png" /></a></div>
+                <div id="logo_text"><a href="index.html"><h1>Available Systems</h1></a></div>
+                <div id="HeaderBug"></div>
+                <script>
+                    $("#HeaderBug").load("Shared/_HeaderBugPartial.html");
+                </script>
+            </div>
+
+        </div>
+        <div id="col_1"></div>
+        <script>
+            fetch('Shared/_LayoutNavigation.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('col_1').innerHTML = data);
+        </script>
+
+        <div id="col_2"></div>
+        <script>
+            fetch('Home/Default.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('col_2').innerHTML = data);
+        </script>
+
+        <div id="footer"></div>
+        <script>
+            fetch('Shared/_LayoutFooter.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        </script>
+    </div>
+
+</body>
+</html>
