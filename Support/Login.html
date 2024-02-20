@@ -1,0 +1,31 @@
+﻿<h1>Supporting existing clients is our top priority.</h1><br /><br />
+
+<h2 class="highlight panel_title">Client Support Login</h2>
+<br />
+<p>Please enter your username and password. @* @Html.ActionLink("Register", "Register", "Footer") if you don't have an account.</p> *@
+<br />
+<div>
+    <fieldset>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.UserName)
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Password)
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <br />
+        <div class="editor-label">
+            @Html.CheckBoxFor(m => m.RememberMe)&nbsp;
+            @Html.LabelFor(m => m.RememberMe)
+        </div>
+        <br/>
+        <input type="submit" value=" Login "  size:20;/>
+    </fieldset>
+</div>
